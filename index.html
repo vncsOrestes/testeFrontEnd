@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/56c01a1186.js" crossorigin="anonymous"></script>
+    <title>Portifólio V.O</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img id="logo" src="./dev1.png" width="8%" alt="Logo dev1">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="github">GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11999999999">WhatsApp</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:teste@teste.com.br">E-mail</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Vinícius Orestes</h1>
+                <h5>Full Stack Developer</h5>
+            </div>
+
+            <div id="alien">
+                <i onclick="displayAbout()" id="animation" class="fa-solid fa-gamepad"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Olá, me chamo Vinícius Orestes e estou realizando minha transição de carreira na área de desenvolvimento. Trabalho no setor de tecnologia a 5 anos, como gestor de suporte técnico e implantação.
+                <p>Estou em constante evolução, sempre estudando para enriquecimento do conhecimento e boas práticas.</p>
+                    <p>Tecnologias estuadas: 
+                    HTML , CSS , MySQL , C++ , Java , JavaScript , PHP , C# , .NET </p>
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato:</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Digite seu e-mail">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer class="rodape">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.google.com/maps/place/Belo+Horizonte,+MG/@-19.9027163,-43.9640501,11z/data=!3m1!4b1!4m5!3m4!1s0xa690cacacf2c33:0x5b35795e3ad23997!8m2!3d-19.919052!4d-43.9386685">Localização</a>
+                </li>
+                <li>
+                    <a id="cop">Copyright © 2022 - Vinícius Orestes</a>
+                </li>
+            </ul>
+        </footer>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var alien = document.getElementById('animation');
+            alien.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
